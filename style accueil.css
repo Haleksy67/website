@@ -1,0 +1,378 @@
+body{	
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#entrée {
+	margin: 0px;
+	padding: 0px;
+	background-image: url('destruction2.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+/*_____________________________________________________________________________________________*/
+
+#titre-accueil{
+	padding-top:200px;
+	padding-bottom:50px;
+	align-items: center; 
+	justify-content: center;
+}
+
+h1{
+	font-size: 50px;
+	font-weight: normal;
+	text-align: center;
+	text-transform:uppercase;
+	font-family: Dutch 766 Std Roman ;
+}
+
+/*_____________________________________________________________________________________________*/
+
+#to-courant{
+	padding:14px;
+	width:100px;
+	font-size: 18px;
+	font-family: calibri;	
+	text-transform:uppercase;	
+	color: white;
+	background-color:black;
+	border-radius: 1px;
+	border: solid black 2px;
+	justify-content: center;
+	align-items:center;
+	text-align: center;
+	text-decoration:none;
+	display: flex;
+	margin:auto;
+}
+
+#to-courant:hover {
+	color: black;
+	background-color:white;
+	transition: 0.3s;		
+}
+
+/*_____________________________________________________________________________________________*/
+
+
+
+.titre-courant{
+	
+}
+
+
+
+h3{
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+	font-family: Dutch 766 Std Roman;
+	text-transform:uppercase;
+	padding:20px;
+	padding-top:60px;
+	margin:0px;
+}
+
+h4{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	font-family: Dutch 766 Std Roman;
+	text-transform:uppercase;
+	padding:20px;
+	margin:0px;
+	padding-bottom:80px;
+}
+
+.normal{
+	display:flex;
+	justify-content: center;
+	margin: auto;
+	padding:0px;
+	height:520px;
+}
+
+.toolarge{	
+	display:flex;
+	justify-content: center;
+	margin: auto;
+	padding:0px;
+	width:902px;
+}
+
+.zoom{
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+	margin:auto;
+	border: 5px solid black;
+	width:fit-content;
+}
+
+.titre{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+	font-family: Dutch 766 Std Roman;
+	padding-top:15px;
+	padding-bottom:105px;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+	"menu content";
+  grid-template-columns: 20% 80%;
+}
+
+.content{
+	grid-area: content;
+	justify-content: center; /* Centre horizontalement */
+    align-items: center;
+}
+
+.feed{
+	width: 75%;
+}
+
+.menu{
+	grid-area: menu;
+}
+
+/*_____________________________________________________________________________________________*/
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; 
+	font-family: Century Gothic;
+	text-transform:uppercase;
+	font-size: 18px;
+	text-decoration :none;
+}
+
+.gallery-item {
+	margin: 20px 50px;
+	border: 4px solid white;
+	width: 250px;
+	background-color : black;
+	color: white;
+	border-radius: 1px;
+}
+
+.gallery-item:hover {
+	border: 4px solid black;
+	border-radius: 1px;
+	background-color : white;
+	color: black;
+	transition: 0.1s;
+}
+
+.gallery-item img {
+	
+}
+
+.gallery-item .desc {
+	padding: 20px;
+	padding-top:18px;
+	text-align: center;
+}
+
+.cadre {
+  width: 250px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 1px, 1px;
+}
+
+.cadre img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* Rogne automatiquement */
+  object-position: center;  /* Position du cadrage */
+}
+
+.liencourant{
+	text-decoration:none;
+	color: white;
+}
+
+.liencourant:hover{
+	text-decoration:none;
+	color: black;
+}
+
+
+/*_____________________________________________________________________________________________*/
+
+.menu-ancre{
+	display: flex;
+	flex-direction: column;
+	margin:20px;
+	position:sticky;
+	top:150px;
+	width:fit-content;
+}	
+
+.ancres{
+	background-color: white;
+	width: 130px;
+	border: 2px solid black;
+	color: black;
+	padding: 12px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	transition-duration: 0.35s;
+	font-family: century gothic ;
+	text-transform:uppercase;
+	
+}
+.ancres:hover{
+	color: white;
+	background-color: black;
+}
+
+.menu-ancre .ancres:not(:last-child) {
+  border-bottom: none;
+}
+
+/*_____________________________________________________________________________________________*/
+
+#to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	height: 30px;
+	padding:4px;
+	font:arial;
+	font-size: 30px;
+	color: black;
+	background-color:white;
+	border-radius: 1px;
+	border: solid black 2px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	transform: scale(0);
+	transition: bottom 200ms, transform 200ms;
+}
+
+#to-top:hover {
+	color: white;
+	background-color:black;
+	bottom:35px;
+	transition: 0.3s;
+}
+
+#to-top.show {
+	transform:scale(1);
+	
+}
+
+.retour-courant{
+	margin-top: 30px;
+	margin-left: 70px;
+	width: 60px;
+	padding:4px;
+	font:arial;
+	font-size: 30px;
+	color: black;
+	background-color:white;
+	border-radius: 1px;
+	border: solid black 2px;
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items:center;
+	transition: bottom 200ms, transform 200ms;		
+}
+
+.retour-courant:hover {
+	color: white;
+	background-color:black;
+	margin-left:65px;
+	transition: 0.3s;		
+}
+
+a, a:hover, a:visited, a:active {text-decoration: none;}
+
+/* _____________________________________________________________________________________________*/
+.principal{
+	font-family: 'Century Gothic', Calibri, serif;
+	width: 100%;
+	background-color: #000000;
+	top: 0;
+	position:sticky;
+}
+
+.principal ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.principal li{
+	list-style-type: none;
+	float: left;
+	transition-duration: 0.3s;
+}
+
+.principal a{
+	display : inline-block;
+	text-decoration : none;
+	padding: 25px 50px;
+	color: #FFF;
+	text-transform:uppercase;
+	font-size: 18px;	
+}
+
+.principal li:hover a{	
+}
+
+.table{
+	display: table;
+	margin: 0 auto;
+}
+
+
+.menu-accueil:hover{
+	background-color:rgb(38, 38, 38);
+}
+.menu-courants:hover{
+	background-color:rgb(38, 38, 38);
+}
+.menu-apropos:hover{
+	background-color:RGBa(38, 38, 38,1);
+}
+/* _____________________________________________________________________________________________*/
+
+@media screen and(max-width:780px){
+	header{
+		height: 50px
+	}
+	h1{
+		font-size: 28px;
+		margin: 20px 0px 0px 0px;
+	}
+	nav li a{
+		font-size: 12px
+		padding: 5px 10px 10px 10px;
+	}
+	nav li:hover a{
+		padding:5px 10px 10px 10px;
+	}
+	img{
+		height:200px;
+	}	
+}
